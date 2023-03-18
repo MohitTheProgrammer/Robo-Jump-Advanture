@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.game-container{
+	background-repeat: repeat;
+    background-image: url(seamless.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.robo{
+    width: 60px;
+    height: 75px;
+    position: absolute;
+    /*bottom: 0vh;*/
+    
+    /*left: 1%;*/
+}
+
+
+.building{
+	width: 90px;
+    
+    height: 200px;
+    position: absolute;
+    bottom: 0%;
+    /*transition: 1200ms left ease;*/
+    
+    /* transition: all;
+    /*transition: all;*/
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 25px;
+}   
+.name h1{
+    text-shadow: 2px 2px 4px #000000;
+
+} 
+.score{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 25px;
+    /*text-shadow: 2px 2px 4px #000000*/
+    font-size: 25px;
+} 
+.score-span{
+    /*border: 2px solid #ad5389;*/
+}
+.pause{
+    margin-top: 10px;
+    padding: 7px 21px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: #558b19;
+    color: white;
+}
+  
+.score button:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.score{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+
+
+.game-container{
+    animation: backgroundAni 15s infinite linear;
+}
+.roboAni{
+	animation: roboAni 1.1s linear;
+}
+@keyframes roboAni{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 45%;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+/*@keyframes backgroundAni {
+	0%{
+       background-position-x: 100vw;
+	}
+	50%{
+       background-position-x: 0vw;
+	}
+    100%{
+        background-position-x: 0vw;
+    }
+}*/
+ 
+       
